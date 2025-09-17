@@ -7,14 +7,32 @@ title: Danny Stephens Cyber Portfolio
 
 ## 🧑‍💻 About Me
 
-Hi, I'm **Danny Stephens**! I'm a passionate cybersecurity enthusiast with experience in penetration testing, vulnerability research, and threat analysis. I’m always looking to learn and grow in the cybersecurity space, and I love solving challenges, especially in CTFs.  
+Hi, I'm **Danny Stephens**, a dedicated cybersecurity professional with hands-on experience in penetration testing, vulnerability assessment, and threat intelligence. I thrive on uncovering security flaws, crafting mitigation strategies, and staying ahead of emerging threats in dynamic environments.
 
-When I'm not exploring the latest vulnerabilities, you can find me building tools, writing research notes, and taking on new certification challenges.
+
+Outside of work, I’m often experimenting with new techniques, documenting my findings, and collaborating with others to strengthen digital defenses
 
 Feel free to contact me:
 - 📧 Email: [danny.stephens1@outlook.com](mailto:danny.stephens1@outlook.com)
 - 💼 LinkedIn: [Danny Stephens](https://www.linkedin.com/in/danny-stephens-16870b300/)
  
+---
+
+## 💼 Employment
+
+**Cybersecurity Engineer**  
+*August 2025 – Present*  
+📍 Plymouth, United Kingdom  
+
+As a Cybersecurity Engineer, I specialize in securing systems, networks, and data against evolving threats within external customer environments. My responsibilities include:
+
+- Conducting regular vulnerability assessments to identify and assess vulnerabilities across diverse systems
+- Analyzing scan results and prioritizing remediation based on risk and impact   
+- Reacting swiftly to zero-day vulnerabilities by assessing exposure, deploying mitigations, and advising customers on containment strategies
+- Implementing and managing security tools and protocols    
+- Collaborating with cross-functional teams to strengthen security posture  
+- Staying up-to-date with emerging threats and mitigation strategies
+  
 ---
 
 ## 👨‍💻 TryHackMe
@@ -46,7 +64,15 @@ _Certificate demonstrating knowledge and skills required to identify and explain
 
 ---
 
-## 🚀 Projects
+## 🌐 Cisco Packet Tracer Labs
+
+- [Cisco Packet Tracer Projects](https://github.com/DannyStephens/Cisco-Packet-Tracer-Projects)  
+  _GitHub repository showcasing my personal approach to designing, configuring, and troubleshooting various network topologies and scenarios.._
+
+---
+
+
+## 🚀 Cyber Projects
 
 - [Static Intrusion Detection System](https://github.com/DannyStephens/Static-IDS)  
   _A Python script analyzes IDS log data to detect suspicious activities like high packet rates, SSH brute force attempts, port scanning, and MAC spoofing within 5-minute windows. It prints alerts for these events while avoiding duplicates and uses customizable port-based thresholds from a CSV file._
