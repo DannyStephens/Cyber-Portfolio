@@ -80,6 +80,9 @@ _Certificate demonstrating knowledge and skills required to identify and explain
 - [Password Strength Checker](https://github.com/DannyStephens/Password-Strength-Checker)  
   _A Python script that evaluates the strength of a password by analyzing its length, complexity, repetition patterns, and presence in a common password list, then scores it and gives feedback._
 
+- [IP Scope Manager](https://github.com/DannyStephens/IP-Scope-Manager)  
+  _A Python script that is designed to help cybersecurity professionals manage IP address scopes efficiently. It allows users to add or remove IP ranges from a working set, validates input using Python’s ipaddress module, and provides clear feedback on invalid entries and operation results._
+
 ---
 
 ## 🛠️ Skills & Tools
