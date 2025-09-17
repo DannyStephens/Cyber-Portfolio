@@ -20,7 +20,7 @@ Feel free to contact me:
 
 ## 💼 Employment
 
-**Cybersecurity Engineer**  
+**Cybersecurity Engineer - Outpost24**  
 *August 2025 – Present*  
 📍 Plymouth, United Kingdom  
 
