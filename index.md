@@ -38,10 +38,10 @@ As a Cybersecurity Engineer, I specialize in securing systems, networks, and dat
 ## 👨‍💻 TryHackMe
 
 I’m actively building my cybersecurity skills through hands-on labs and challenges on TryHackMe. The interactive badge below is live and updates automatically with my latest progress. Click the badge to view my full public profile and explore the rooms and challenges I've completed in areas like ethical hacking, penetration testing, and network security.
-<div style="overflow: hidden; width: 400px; height: 130px; font-size: 0; line-height: 0; margin: 0 auto; background-color:#1e1e1e; color:#e0e0e0;">
+<div style="overflow: hidden; width: 400px; height: 130px; font-size: 0; line-height: 0; margin: 0 auto; background:#1e1e1e">
   <iframe
     src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3051282"
-    style="border: none; width: 400px; height: 150px; display: block; margin: 0; padding: 0; background-color:#1e1e1e; color:#e0e0e0;">
+    style="border: none; width: 400px; height: 150px; display: block; margin: 0; padding: 0; background:#1e1e1e">
   </iframe>
 </div>
 
