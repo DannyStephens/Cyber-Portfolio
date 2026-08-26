@@ -74,6 +74,9 @@ _Certificate demonstrating knowledge and skills required to identify and explain
 
 ## 🚀 Cyber Projects
 
+- [Domain Vulnerability Scanner](https://github.com/DannyStephens/Domain-Vulnerability-Scanner)  
+  _A Next.js reconnaissance platform that runs 30+ automated checks against bulk domain and URL lists - WHOIS, DNS, TLS/certificate validation, security headers, email authentication (SPF/DMARC/DNSSEC), subdomain enumeration, blacklist/reputation lookups, and opt-in port scanning - then correlates the results into a severity-rated findings report, with scan comparison and printable reporting._
+
 - [Static Intrusion Detection System](https://github.com/DannyStephens/Static-IDS)  
   _A Python script analyzes IDS log data to detect suspicious activities like high packet rates, SSH brute force attempts, port scanning, and MAC spoofing within 5-minute windows. It prints alerts for these events while avoiding duplicates and uses customizable port-based thresholds from a CSV file._
 
@@ -87,7 +90,7 @@ _Certificate demonstrating knowledge and skills required to identify and explain
 
 ## 🛠️ Skills & Tools
 
-- **Languages**: Python, Bash, PowerShell, JavaScript, SQL
+- **Languages**: Python, Bash, PowerShell, JavaScript, TypeScript, SQL
 - **Tools**: Metasploit, Burp Suite, Nmap, Wireshark, Hydra, Nikto
 - **Operating Systems**: Kali Linux, Parrot OS, Ubuntu, Windows
 - **Other**: Git, Docker, AWS, Cloud Security
