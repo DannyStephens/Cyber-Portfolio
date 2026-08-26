@@ -13,9 +13,12 @@ Hi, I'm **Danny Stephens**, a dedicated cybersecurity professional with hands-on
 Outside of work, I’m often experimenting with new techniques, documenting my findings, and collaborating with others to strengthen digital defenses
 
 Feel free to contact me:
-- 📧 Email: [danny.stephens1@outlook.com](mailto:danny.stephens1@outlook.com)
-- 💼 LinkedIn: [Danny Stephens](https://www.linkedin.com/in/danny-stephens-16870b300/)
- 
+
+<div class="contact-links">
+  <a href="mailto:danny.stephens1@outlook.com">📧 danny.stephens1@outlook.com</a>
+  <a href="https://www.linkedin.com/in/danny-stephens-16870b300/">💼 LinkedIn</a>
+</div>
+
 ---
 
 ## 💼 Employment
@@ -48,6 +51,9 @@ I’m actively building my cybersecurity skills through hands-on labs and challe
 <hr />
 
 ## 🎓 Certifications
+
+- CompTIA CySA+ <span class="badge-progress">In Progress</span>  
+  _Currently studying towards the Cybersecurity Analyst certification, covering security operations, vulnerability management, incident response, and threat intelligence._
 
 - [CompTIA Security+ Certificate](https://www.credly.com/badges/b236507a-10df-436e-a24c-ee5e470c83a5/public_url)  
   _Certificate demonstrating foundational cybersecurity knowledge in network security, compliance, and operational security._
@@ -90,10 +96,25 @@ _Certificate demonstrating knowledge and skills required to identify and explain
 
 ## 🛠️ Skills & Tools
 
-- **Languages**: Python, Bash, PowerShell, JavaScript, TypeScript, SQL
-- **Tools**: Metasploit, Burp Suite, Nmap, Wireshark, Hydra, Nikto
-- **Operating Systems**: Kali Linux, Parrot OS, Ubuntu, Windows
-- **Other**: Git, Docker, AWS, Cloud Security
+<p class="skill-group-label">Languages</p>
+<div class="skill-tags">
+  <span>Python</span><span>Bash</span><span>PowerShell</span><span>JavaScript</span><span>TypeScript</span><span>SQL</span>
+</div>
+
+<p class="skill-group-label">Tools</p>
+<div class="skill-tags">
+  <span>Metasploit</span><span>Burp Suite</span><span>Nmap</span><span>Wireshark</span><span>Hydra</span><span>Nikto</span>
+</div>
+
+<p class="skill-group-label">Operating Systems</p>
+<div class="skill-tags">
+  <span>Kali Linux</span><span>Parrot OS</span><span>Ubuntu</span><span>Windows</span>
+</div>
+
+<p class="skill-group-label">Other</p>
+<div class="skill-tags">
+  <span>Git</span><span>Docker</span><span>AWS</span><span>Cloud Security</span>
+</div>
 
 
 

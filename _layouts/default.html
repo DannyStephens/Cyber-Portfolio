@@ -5,33 +5,257 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Danny Stephens Cybersecurity Portfolio</title>
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css"
   />
 
   <style>
+  :root {
+    --bg: #090c11;
+    --bg-glow: #0d1420;
+    --surface: #10161f;
+    --surface-hover: #141c27;
+    --border: #1e2733;
+    --border-strong: #2b3746;
+    --text: #e7ecf3;
+    --text-muted: #8b96a5;
+    --text-dim: #576375;
+    --accent: #22d3ee;
+    --accent-strong: #06b6d4;
+    --accent-soft: rgba(34, 211, 238, 0.12);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     margin: 0;
-    padding: 1rem;
-    background: #f0f0f0;
+    padding: 3rem 1.25rem;
+    min-height: 100vh;
+    background:
+      radial-gradient(1100px 500px at 15% -10%, var(--bg-glow), transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, rgba(34, 211, 238, 0.06), transparent 55%),
+      var(--bg);
     display: flex;
     justify-content: center;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   }
 
   .content-wrapper {
-    max-width: 800px;
+    max-width: 840px;
     width: 100%;
-    background: #ffffff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    color: #000000;
+    background: var(--surface);
+    padding: clamp(1.75rem, 4vw, 3.25rem);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.02) inset;
+    color: var(--text);
   }
+
+  /* ---------- Typography ---------- */
+
+  .markdown-body {
+    background: var(--surface);
+    color: var(--text) !important;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .markdown-body h1 {
+    font-size: clamp(1.75rem, 4vw, 2.35rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    background: linear-gradient(90deg, var(--text) 30%, var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: none !important;
+    padding-bottom: 0;
+    margin-bottom: 0.4rem;
+  }
+
+  .markdown-body h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text);
+    border-bottom: none !important;
+    padding: 0;
+    margin-top: 2.6rem;
+    margin-bottom: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .markdown-body h2::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--border-strong), transparent);
+    margin-left: 0.4rem;
+  }
+
+  .markdown-body p {
+    color: var(--text-muted);
+  }
+
+  .markdown-body strong {
+    color: var(--text);
+  }
+
+  .markdown-body a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.15s ease;
+  }
+  .markdown-body a:hover {
+    color: #67e8f9;
+    text-decoration: underline;
+  }
+
+  /* ---------- Section dividers ---------- */
+
+  .markdown-body hr {
+    border: none;
+    height: 1px;
+    margin: 2.4rem 0;
+    background: linear-gradient(90deg, transparent, var(--border-strong) 20%, var(--border-strong) 80%, transparent);
+  }
+
+  /* ---------- Lists ---------- */
+
+  .markdown-body ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0.75rem 0;
+  }
+
+  .markdown-body li {
+    position: relative;
+    padding: 0.55rem 0 0.55rem 1.35rem;
+    color: var(--text-muted);
+  }
+
+  .markdown-body li::before {
+    content: "";
+    position: absolute;
+    left: 0.15rem;
+    top: 1.05rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: var(--accent);
+    opacity: 0.7;
+  }
+
+  /* Project/cert entries carry an italic description line (linked or not, e.g. an
+     in-progress cert with no credential link yet) - style those as a small card.
+     Plain bullet lists (e.g. job responsibilities) don't match this shape and stay
+     a clean list. */
+  .markdown-body li:has(em) {
+    background: var(--surface-hover);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.9rem 1.1rem 1rem 1.35rem;
+    margin-bottom: 0.7rem;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  .markdown-body li:has(em):hover {
+    border-color: var(--accent-strong);
+    transform: translateX(2px);
+  }
+  .markdown-body li:has(em)::before {
+    top: 1.2rem;
+  }
+  .markdown-body li:has(> a) > a {
+    font-size: 1.02rem;
+  }
+  .markdown-body li em {
+    display: inline-block;
+    margin-top: 0.35rem;
+    color: var(--text-dim);
+    font-style: normal;
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+
+  /* ---------- Badges (skills, cert status) ---------- */
+
+  .badge-progress {
+    display: inline-block;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fbbf24;
+    background: rgba(251, 191, 36, 0.12);
+    border: 1px solid rgba(251, 191, 36, 0.35);
+    border-radius: 999px;
+    padding: 0.15rem 0.55rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.4rem 0 1rem;
+  }
+  .skill-tags span {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.8rem;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid rgba(34, 211, 238, 0.25);
+    border-radius: 7px;
+    padding: 0.3rem 0.65rem;
+  }
+  .skill-group-label {
+    color: var(--text);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 1.1rem 0 0;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin: 1rem 0 1.5rem;
+  }
+  .contact-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--surface-hover);
+    border: 1px solid var(--border-strong);
+    border-radius: 8px;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.88rem;
+    color: var(--text) !important;
+  }
+  .contact-links a:hover {
+    border-color: var(--accent-strong);
+    color: var(--accent) !important;
+    text-decoration: none !important;
+  }
+
+  /* ---------- Misc embeds ---------- */
 
   .markdown-body blockquote,
   .markdown-body pre {
-    background-color: #ffffff !important;
+    background-color: var(--surface-hover) !important;
+    border-color: var(--border) !important;
   }
 
   .markdown-body iframe {
@@ -39,18 +263,24 @@
     vertical-align: top;
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
+    border-radius: 10px;
   }
 
   .markdown-body div[style*="overflow"] {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
+    border-radius: 10px;
+    overflow: hidden;
   }
 
-  .markdown-body hr {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-    border: none;
-    border-top: 1px solid #ccc;
+  @media (max-width: 600px) {
+    body {
+      padding: 1.25rem 0.75rem;
+    }
+    .contact-links,
+    .skill-tags {
+      gap: 0.45rem;
+    }
   }
 </style>
 
@@ -61,10 +291,3 @@
   </div>
 </body>
 </html>
-
-
-
-
-
-
-
